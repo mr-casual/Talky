@@ -18,6 +18,7 @@
 		A2B4BC262121D7230065DA10 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4BC122121D7220065DA10 /* RequestError.swift */; };
 		A2B4BC2D2121D7770065DA10 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4BC182121D7220065DA10 /* URLSessionMock.swift */; };
 		A2B4BC2E2121D7770065DA10 /* HTTPClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4BC1A2121D7220065DA10 /* HTTPClientSpec.swift */; };
+		A2B4BC312121DA570065DA10 /* Talky.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A2B4BC302121DA560065DA10 /* Talky.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A2B4BC1D2121D7220065DA10 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2B4BC1E2121D7220065DA10 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A2B4BC1F2121D7220065DA10 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A2B4BC302121DA560065DA10 /* Talky.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Talky.podspec; sourceTree = "<group>"; };
 		A47707F7E19C70DE19B9DE82 /* Pods_TalkyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87DB62F65BC4AC61BFD042F /* Pods-TalkyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkyTests/Pods-TalkyTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD0C4BE7600E06F9B4ABF7C0 /* Pods-Talky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Talky/Pods-Talky.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				A2B4BC1E2121D7220065DA10 /* LICENSE */,
 				A2B4BC1F2121D7220065DA10 /* README.md */,
+				A2B4BC302121DA560065DA10 /* Talky.podspec */,
 				A2B4BC1C2121D7220065DA10 /* Resources */,
 				A2B4BC0B2121D7220065DA10 /* Sources */,
 				A2B4BC132121D7220065DA10 /* Tests */,
@@ -283,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B4BC312121DA570065DA10 /* Talky.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
