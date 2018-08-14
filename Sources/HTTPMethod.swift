@@ -21,7 +21,7 @@ public enum HTTPMethod: String, Equatable {
     case patch = "PATCH"
 }
 
-extension URLRequest {
+public extension URLRequest {
     
     public var method: HTTPMethod? {
         get {

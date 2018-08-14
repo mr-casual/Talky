@@ -10,7 +10,7 @@ import Foundation
 
 /**
  */
-protocol DecodingService {
+public protocol DecodingService {
     func decode<T: Decodable>(_ type: T.Type, from data: Data) throws -> T
 }
 
@@ -18,26 +18,26 @@ extension JSONDecoder: DecodingService {}
 
 /**
  */
-enum RequestResult<ResponseBody, ErrorResponse> {
+public enum RequestResult<ResponseBody, ErrorResponse> {
     case success(HTTPURLResponse, ResponseBody)
     case failure(RequestError<ErrorResponse>)
 }
 
 /**
  */
-protocol RequestRetrier {
+public protocol RequestRetrier {
     func shouldRetryRequest(_ request: URLRequest, response: HTTPURLResponse) -> Bool
 }
 
 /**
  */
-protocol RequestModifier {
+public protocol RequestModifier {
     func modifiyRequest(_ request: URLRequest)
 }
 
 /**
  */
-class HTTPClient {
+public class HTTPClient {
     
     // MARK: - Public properties
     lazy var requestBuilder = RequestBuilder()
@@ -45,7 +45,7 @@ class HTTPClient {
     
     
     // MARK: - Initializer(s)
-    required init(session: URLSession = URLSession(configuration: .default)) {
+    public required init(session: URLSession = URLSession(configuration: .default)) {
         self.session = session
     }
     

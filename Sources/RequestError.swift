@@ -9,7 +9,7 @@
 import Foundation
 
 
-enum RequestError<ResponseBody>: Error {
+public enum RequestError<ResponseBody>: Error {
 
     //MARK: case definitions
     case urlError(URLError)

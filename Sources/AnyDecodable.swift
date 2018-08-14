@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct AnyDecodable: Decodable {
+public struct AnyDecodable: Decodable {
     let value: Any
     
     private struct CodingKeys: CodingKey {
@@ -22,7 +22,7 @@ struct AnyDecodable: Decodable {
         init?(stringValue: String) { self.stringValue = stringValue }
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         if let container = try? decoder.container(keyedBy: CodingKeys.self) {
             var result = [String: Any]()
             try container.allKeys.forEach { (key) throws in

@@ -199,7 +199,7 @@ public enum HTTPHeaderField: RawRepresentable, Hashable {
 }
 
 
-extension URLRequest {
+public extension URLRequest {
     
     public var headerFields: [HTTPHeaderField : String]? {
         return allHTTPHeaderFields?.reduce(into: [HTTPHeaderField : String](), { $0[HTTPHeaderField(rawValue: $1.key)] = $1.value })

@@ -9,14 +9,14 @@
 import Foundation
 
 
-protocol EncodingService {
+public protocol EncodingService {
     func encode<T : Encodable>(_ value: T) throws -> Data
 }
 
 extension JSONEncoder: EncodingService { }
 
 
-class RequestBuilder {
+public class RequestBuilder {
         lazy var parameterEncoder: EncodingService = JSONEncoder()
     
     func buildURLRequest(url: URL, method: HTTPMethod = .get, headerFields: [HTTPHeaderField : String]? = nil) throws -> URLRequest {
